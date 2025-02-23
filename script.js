@@ -106,12 +106,173 @@
 //const b=age+a;
 //console.log(b);
 
-const car=["bmw","mercedes","audi","toyota", "nissan"];
-let text="";
-for (let i=0; i<car.length; i++)
-  {
-    text+=car[i] + "<br>";
+//const car=["bmw","mercedes","audi","toyota", "nissan"];
+//let text="";
+//for (let i=0; i<car.length; i++)
+//  {
+//    text+=car[i] + "<br>";
+//}
+
+//document.getElementById("demo").innerHTML=text;
+
+//let a=6;
+//for(let i=1;i<a;i++)
+//{  
+ // if(i%2==0)
+ // {
+//    console.log()
+ // }
+ //   console.log(i);
+//}
+
+// let i=0 yoki 1  ;i<a.lenght ;i<a ;i<=a ;i++
+
+// 1 6 da  -> 2 
+// do{ code  a++;} while()
+
+//let kun = 4;   // 5kungi  malumot kere
+//switch (kun)   // qavsdi ichi bir xil bolish ozgaruvchi bilan
+//{
+ // case 1:
+  //  console.log("dushanba");
+   // break;  // toxtatish
+  //case 2:
+   // console.log("seshanba");
+ // break;
+  //case 3:
+  //console.log("chorshanba");
+   //break;
+  //case 4:
+  //console.log("payshanba");
+   // break;
+    //case 5:
+    //console.log("juma");
+    //break;
+   //case 6:
+    //console.log("shanba");
+    //break;
+    //case 7:
+   // console.log("yakshanba");
+   // break;
+    //default:
+     // console.log("brat adashb qoldiz");
+     // break;
+
+
+
+//}
+
+//let day;  // saqlanmagan 
+//switch (new Date().getDay()) {  //  .getday()  vazifasi bugungi kundi chiqarb bersh 0
+ // case 0:
+  //  day = "yakshanba";
+  //  break;
+ // case 1:
+   // day = "Monday";
+   // break;
+ // case 2:
+  //  day = "Tuesday";
+  //  break;
+ // case 3:
+  //  day = "Wednesday";
+   // break;
+ // case 4:
+   // day = "Thursday";
+   // break;
+ // case 5:
+    //day = "Friday";
+    //break;
+  //case  6:
+  //  day = "Saturday";
+//}
+//document.getElementById("demo").innerHTML = "Today is " + day;
+
+//let ovqat=7;
+//switch(ovqat)
+//{
+ // case 1:
+   // console.log("osh");
+    //break;
+  //case 2:
+   // console.log("shorva");
+  //  break;
+//  case 3:
+    //console.log("manti");
+    //break;
+  //case 4:
+    //console.log("somsa");
+    //break;
+  //case 5:
+    //console.log("lagman");
+   // break;
+  //case 6:
+    //console.log("kabob");
+   // break;
+  //default:
+   // console.log("menyuda bunaqa taom yo'q");
+  //  break;  
+//}
+
+//let oy=5;
+//switch(oy)
+//{
+  //case 1:
+    //console.log("yanvar");
+    //break;
+  //case 2:
+   // console.log("fevral");
+    //break;
+  //case 3:
+   // console.log("mart");
+    //break;
+  //case 4:
+  //  console.log("aprel");
+   // break;
+  //case 5:
+   // console.log("may");
+   // break;
+  //case 6:
+   // console.log("iyun");
+   // break;
+  //case 7:
+   // console.log("iyul");
+    //break;
+ // case 8:
+  //  console.log("avgust");
+   // break;
+  //case 9:
+   // console.log("sentabr");
+    //break;
+ // case 10:
+  //  console.log("oktabr");
+   // break;
+  //case 11:
+    //console.log("noyabr");
+   // break;
+  //case 12:
+   // console.log("dekabr");
+    //break;
+  //default:
+   // console.log("bunday oy yo'q");
+    //break;
+//} 
+
+let fasilar=2;
+switch(fasilar)
+{
+  case 1:
+    console.log("mart,aprel,may");
+    break;
+    case 2:
+      console.log("iyun,iyul,avgust");
+      break;
+      case 3:
+        console.log("sentiyabir,oktiyabir,nayabir");
+        break;
+        case 4:
+          console.log("dekabir,yanvar,fevral");
+          break;
+          default:
+            console.log("bunday fasil yoq");
+            break;
 }
-
-document.getElementById("demo").innerHTML=text;
-
