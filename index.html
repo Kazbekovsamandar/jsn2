@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>onClickgs Misol</title>
+<title>onchange Misol</title>
 </head>
 <body>
-  <p id="demo">Buyerdaga matin ozgaradi</p>
-  <button onclick="changeText()">Ishinch uchun bosin!</button>
+    <label for="inputBox">Matin kiriting:</label>
+    <input type="text" id="inputBox" onchange="showValue()">
+    <p id="demo"></p>
 
-  <script>
-    function changeText() {
-      document.getElementById("demo").innerHTML = "Siz bu tugmani bosdingiz!";
-    }
-  </script>
+    <script>
+        function showValue() {
+            let inputValue = document.getElementById("inputBox").value;
+            document.getElementById("demo").innerText = "Siz kiritgan matin:" + inputValue;
+        }
+    </script>
 </body>
 </html>
