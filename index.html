@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js n2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>onClickgs Misol</title>
 </head>
 <body>
-    <h1 id="demo">bmw</h1>
-    
+  <p id="demo">Buyerdaga matin ozgaradi</p>
+  <button onclick="changeText()">Ishinch uchun bosin!</button>
+
+  <script>
+    function changeText() {
+      document.getElementById("demo").innerHTML = "Siz bu tugmani bosdingiz!";
+    }
+  </script>
 </body>
-<script src="script.js"></script>
 </html>

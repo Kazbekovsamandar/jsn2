@@ -69,9 +69,9 @@
 //if(a>9);
 //console.log('U maktab oquvchisi');
 
-//let a=4;
-//let b=10;
-//let y=a*b;
+//let a=45;
+//let b=15;
+//let y=a/b;
 //console.log(y);
 
 // takrorlanish 
@@ -80,11 +80,11 @@
 // 
 // while -> davomida  misol uchun men dars otrgan paytim ,pul sanashyapti 
 //
-//let a=1;
-//while(a<10)   // buyruq 
+//let a=2;
+//while(a<112)   // buyruq 
 //{
- //console.log(a);
- //a=a+2;  //a ++
+// console.log(a);
+// a=a+2;  //a ++
          // amal 
 //}
 // amalimi oxrgi qiymati false bolsa chqb ketadi
@@ -106,11 +106,11 @@
 //const b=age+a;
 //console.log(b);
 
-//const car=["bmw","mercedes","audi","toyota", "nissan"];
+//const water=["coca cola","fanta","tiropic","chay", "flesh"];
 //let text="";
-//for (let i=0; i<car.length; i++)
-//  {
-//    text+=car[i] + "<br>";
+//for (let i=0; i<water.length; i++)
+  //{
+  //  text+=water[i] + "<br>";
 //}
 
 //document.getElementById("demo").innerHTML=text;
@@ -257,22 +257,73 @@
     //break;
 //} 
 
-let fasilar=2;
-switch(fasilar)
-{
-  case 1:
-    console.log("mart,aprel,may");
-    break;
-    case 2:
-      console.log("iyun,iyul,avgust");
-      break;
-      case 3:
-        console.log("sentiyabir,oktiyabir,nayabir");
-        break;
-        case 4:
-          console.log("dekabir,yanvar,fevral");
-          break;
-          default:
-            console.log("bunday fasil yoq");
-            break;
+//let fasilar=2;
+//switch(fasilar)
+//{
+  //case 1:
+    //console.log("Bahor");
+ // break;
+ // case 2:
+  //   console.log("Yoz");
+  // break;
+  // case 3:
+    // console.log("Kuz");
+  // break;
+  // case 4:
+    // console.log("Qish");
+  // break;
+   // default:
+      // console.log("bunday fasil yoq");
+      //break;
+//}
+
+//let i=1;
+//while(i<=100){
+  //if(i % 5 != 0){
+  //  console.log(i);
+  //}
+  //i++;
+//}
+
+//let a=5;
+//if(a%2==1){
+ // console.log('toq son');
+//}
+//else{
+  //console.log('juft son');
+//}
+
+//let i = 1;
+//while(i<=10){
+ // console.log(i*i);
+ // i++;
+//}
+
+//for(let i = 1; i <= 5; i++){
+ // console.log((i ** 3));
+//}
+
+
+document.getElementById("mySelect").onchange = function() {
+  myFunction();
+};  
+
+// optionlardi ozgartirish onchangega misol  onchange faqat  
+
+function myFunction() {
+  let x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+//myfunction  optionlardi almashtirish uchun
+
+//
+
+document.getElementById("myInput").onchange = function() {
+  inputFunction();
+};
+
+function inputFunction() {
+    let inputVal = document.getElementById("myInput").value;
+    document.getElementById("inputDemo").innerHTML = "You entered: " + inputVal;
+
 }
