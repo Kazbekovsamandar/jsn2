@@ -523,16 +523,27 @@
 //silce -> substring
 
 
-const Password='     ozbekiston';
-// trim
-console.log(Password);
-console.log(Password.trim());
-console.log(Password.trimStart());
-// trimSart- oldidagi space chopadi
-console.log(Password.trimEnd());
-// trim methoddi bizga ortiqcha spacelarni qirqish uchun ishlatamiz
+// const Password='     ozbekiston';
+// // trim
+// console.log(Password);
+// console.log(Password.trim());
+// console.log(Password.trimStart());
+// // trimSart- oldidagi space chopadi
+// console.log(Password.trimEnd());
+// // trim methoddi bizga ortiqcha spacelarni qirqish uchun ishlatamiz
 
-// trimdi bizga ortiqcha spacelarni qirqish uchun ishlatamiz
+// // trimdi bizga ortiqcha spacelarni qirqish uchun ishlatamiz
 
-const son=13.4;
-console.log(son);
+const son=13.7;
+console.log('roundni natijasi',Math.round(son));
+//round o'zidan kattaga qarap yuradi
+console.log('floorni natijasi',Math.floor(son));
+//floor nuqtadan keyingilardi chopvoradi
+//round floor vazifasini taqriblaberishi
+
+const width='323.9px'; //stringda
+//stringdagi malumotni raqamga otkazish
+console.log('numberga olish',parseInt(width));
+//parseInt => stringdi raqam qib oladi + uni yaxlitledi  (prinsipi floor kabi verguldan keyin choopadi)
+console.log('numberga olish',parseFloat(width));
+// paseFloat => stringdi raqam qib beradi
