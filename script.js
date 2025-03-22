@@ -2,8 +2,8 @@
 // const message=alert('Hello World');
 // console.log(message);
 //confirm inglizchadan tasdiqlash va ikki xil malumot
-//const age = confirm("are you 18+");
-//console.log(age);
+// const age = confirm("are you 18+");
+// console.log(age);
 
 //const message =+prompt("son kiriting");
 //console.log(typeof (message));//null
@@ -96,8 +96,8 @@
 //}  // true likka tekshiradi keyin false
 //while(a<10);
 
-//const message =alert("17 yoshdan katta bo'lganlar saytga kirish mumkin?!");
-//console.log(message);
+// const message =alert("17 voyaga yetmagan!");
+// console.log(message);
 
 //let age=+prompt("bironta son kiriting");
 //age=Number(age);
@@ -402,16 +402,16 @@
 //}
 //SHowHelloworld();
 
-//let age=17;
-//console.log(age);
-//function sayHellotoUser(name)
-//{
-   // let age=20;
-  //  console.log(`Hello ${name},he is ${age} years old`);
-//}
+// let age=17;
+// console.log(age);
+// function sayHellotoUser(name)
+// {
+//    let age=20;
+//    console.log(`Hello ${name},he is ${age} years old`);
+// }
 
-//sayHellotoUser("Sardor");
-//console.log(age);
+// sayHellotoUser("Sardor");
+// console.log(age);
 
 // () -> argument dynamic malumotlar
 
@@ -534,16 +534,133 @@
 
 // // trimdi bizga ortiqcha spacelarni qirqish uchun ishlatamiz
 
-const son=13.7;
-console.log('roundni natijasi',Math.round(son));
-//round o'zidan kattaga qarap yuradi
-console.log('floorni natijasi',Math.floor(son));
-//floor nuqtadan keyingilardi chopvoradi
-//round floor vazifasini taqriblaberishi
+// const son=13.7;
+// console.log('roundni natijasi',Math.round(son));
+// //round o'zidan kattaga qarap yuradi
+// console.log('floorni natijasi',Math.floor(son));
+// //floor nuqtadan keyingilardi chopvoradi
+// //round floor vazifasini taqriblaberishi
 
-const width='323.9px'; //stringda
-//stringdagi malumotni raqamga otkazish
-console.log('numberga olish',parseInt(width));
-//parseInt => stringdi raqam qib oladi + uni yaxlitledi  (prinsipi floor kabi verguldan keyin choopadi)
-console.log('numberga olish',parseFloat(width));
-// paseFloat => stringdi raqam qib beradi
+// const width='323.9px'; //stringda
+// //stringdagi malumotni raqamga otkazish
+// console.log('numberga olish',parseInt(width));
+// //parseInt => stringdi raqam qib oladi + uni yaxlitledi  (prinsipi floor kabi verguldan keyin choopadi)
+// console.log('numberga olish',parseFloat(width));
+// // paseFloat => stringdi raqam qib beradi
+
+age = 17;
+firstName = "Samandar";
+console.log("Mening ismim " + firstName + ", " + age + " yoshdaman");
+
+isStudent = true;
+console.log("isStudent qiymati:", isStudent);
+console.log("isStudentning malumoti:", typeof isStudent);
+
+favoriteColor = "Qora, Oq";
+console.log("Sevimli rangim: " + favoriteColor);
+
+myString = "Salom, qanday yuribsiz?";
+console.log(myString);
+ 
+sentence = "Bugun havo juda chiroyli.";
+console.log(sentence.length);
+
+console.log("salom");
+console.log('hariflardi kichaytirdik',salom.toLowerCase());
+
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(10, 5);
+console.log("Yig‘indi:", result);
+
+function multiply(a, b) {
+  return a * b; 
+}
+
+
+let result = multiply(4, 5); 
+console.log("Ko'paytma:", result); 
+
+function greet(isim) {
+  console.log("Salom, " + isim + "! Qanday yuribsiz?");
+}
+greet("Samandar");
+
+function joinStrings(str1, str2) {
+  return str1 + " " + str2; // Ikkita satrni bo'sh joy bilan birlashtirish
+}
+let result = joinStrings("Assalomu alaykum", "dunyo!");
+console.log(result); // Konsolga: "Assalomu alaykum dunyo!" chiqadi
+
+const person = {
+  firstName: "Bilol",
+  lastName: "Rasulov",
+  age: 15,
+  
+};
+console.log(person.firstName + " " + person.lastName + " " + person.age + " yoshda");
+
+let car = {
+  make: "Toyota",   // Mashina brendi
+  model: "Camry",   // Mashina modeli
+  year: 2022        // Yili
+};
+
+console.log(car);
+
+let book = {
+  title: "JavaScript Asoslari",  // Kitob nomi
+  author: "John Doe",            // Muallif
+  pages: 350                     // Sahifalar soni
+};
+
+console.log(book);
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+
+console.log(isEven(4));  // true
+console.log(isEven(7));  // false
+console.log(isEven(0));  // true
+console.log(isEven(-2)); // true
+console.log(isEven(-3)); // false
+
+function maxNumber(a, b) {
+  return a > b ? a : b;
+}
+
+console.log(maxNumber(10, 5));  // 10
+console.log(maxNumber(3, 8));   // 8
+console.log(maxNumber(-2, -5)); // -2
+console.log(maxNumber(7, 7));   // 7 (agar ikkisi teng bo'lsa, shu son qaytadi)
+
+function sonHolati(son) {
+  if (son > 0) {
+      return "Musbat";
+  } else if (son < 0) {
+      return "Manfiy";
+  } else {
+      return "Nol";
+  }
+}
+
+console.log(sonHolati(10));  // "Musbat"
+console.log(sonHolati(-5));  // "Manfiy"
+console.log(sonHolati(0));   // "Nol"
+console.log(sonHolati(3.5)); // "Musbat"
+console.log(sonHolati(-2.8));// "Manfiy"
+
+function satrTengmi(satr1, satr2) {
+  return satr1 === satr2;
+}
+
+console.log(satrTengmi("salom", "salom")); // true
+console.log(satrTengmi("hello", "world")); // false
+console.log(satrTengmi("JavaScript", "javascript")); // false (katta-kichik harf farq qiladi)
+console.log(satrTengmi("", "")); // true
+console.log(satrTengmi("123", "123")); // true
+console.log(satrTengmi("abc", "abcd")); // false
